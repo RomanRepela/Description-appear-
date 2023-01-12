@@ -1,0 +1,55 @@
+img {
+    display: block;
+}
+
+.title-text {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    margin-top: 0;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.subtitle-text {
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    width: 240px;
+}
+
+.text-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.conteiner1 {
+    position: relative;
+    width: 100%;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    transform: scale(0)
+}
+
+.conteiner1:hover .overlay1 {
+    transform: scale(1);
+}
